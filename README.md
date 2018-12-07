@@ -1,6 +1,6 @@
 # StatsBombR
 
-A basic mirror of the (StatsBombR)[https://github.com/statsbomb/StatsBombR] package without `doParallel` dependencies.
+A basic mirror of the [StatsBombR](https://github.com/statsbomb/StatsBombR) package without `doParallel` dependencies.
 
 Installs with plenty of warnings but should do the job for those who don't want to upgrade to R 5.0 yet.
 
