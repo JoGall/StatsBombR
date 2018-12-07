@@ -3,7 +3,7 @@
 \title{
 This function returns all events from the competitions and seasons specified in the arguments.}
 \description{
-For use with the StatsBomb Staging Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. This function supports multiple competitions and seasons simultaneously. Currently, parallel is only supported for windows. Staging Access Required.}
+For use with the StatsBomb Staging Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. This function supports multiple competitions and seasons simultaneously. Staging Access Required.}
 \usage{
 StagingMultiCompEvents(username = "username", password = "password",
                 competitionmatrix)

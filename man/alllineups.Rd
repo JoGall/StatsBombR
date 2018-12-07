@@ -3,9 +3,9 @@
 \title{
 This function returns all lineups from the matches specified in the arguments.}
 \description{
-For use with the StatsBomb Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. Currently, this function only supports one season and one competition at a time. This function can simply be run multiple times for different seasons and competitions and then bound together. Currently, parallel is only supported for windows.}
+For use with the StatsBomb Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. Currently, this function only supports one season and one competition at a time. This function can simply be run multiple times for different seasons and competitions and then bound together.}
 \usage{
-allmatches(username = "username", password = "password", matches$match_id, parallel = T)
+allmatches(username = "username", password = "password", matches$match_id)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -14,8 +14,6 @@ allmatches(username = "username", password = "password", matches$match_id, paral
 \item{password}{Character object of your StatsBomb API password.
 }
 \item{match_id}{Character vector of the matches you wish to access.
-}
-\item{Parallel}{Boolean variable for whether or not you want to gather in parallel (much faster).
 }
 
 }
@@ -40,7 +38,7 @@ allmatches(username = "username", password = "password", matches$match_id, paral
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-alllineups(username = username, password = password, matches.epl$match_id, parallel = T)
+alllineups(username = username, password = password, matches.epl$match_id)
 \keyword{StatsBomb}% use one of  RShowDoc("KEYWORDS")
 \keyword{Data}% __ONLY ONE__ keyword per line
 \keyword{Match}% __ONLY ONE__ keyword per line

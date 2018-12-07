@@ -5,12 +5,11 @@ This function returns all events for the matches requested, or all matches avail
 \description{
 This function easily scrapes the free events available from StatsBomb on our GitHub repository. Currently, parallel is only supported on PCs.}
 \usage{
-StatsBombFreeEvents(MatchesDF = "ALL", Parallel = T)
+StatsBombFreeEvents(MatchesDF = "ALL")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
 \item{MatchesDF}{Data frame of the matches you wish to pull for the events for. Or simply type "ALL" to return all free events available.}
-\item{Parallel}{Boolean variable for whether or not you want the function to run in parallel.}
 \details{
 }
 \value{
@@ -32,8 +31,8 @@ StatsBombFreeEvents(MatchesDF = "ALL", Parallel = T)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-StatsBombFreeEvents(MatchesDF = "ALL", Parallel = T)
-StatsBombFreeEvents(MatchesDF = Matches, Parallel = T) #Where Matches is a dataframe of the matches
+StatsBombFreeEvents(MatchesDF = "ALL")
+StatsBombFreeEvents(MatchesDF = Matches) #Where Matches is a dataframe of the matches
 
 \keyword{StatsBomb}% use one of  RShowDoc("KEYWORDS")
 \keyword{Data}% __ONLY ONE__ keyword per line

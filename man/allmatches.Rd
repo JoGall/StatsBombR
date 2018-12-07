@@ -3,10 +3,10 @@
 \title{
 This function returns all events from the matches specified in the arguments.}
 \description{
-For use with the StatsBomb Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. Currently, this function only supports one season and one competition at a time. This function can simply be run multiple times for different seasons and competitions and then bound together. Currently, parallel is only supported for windows.}
+For use with the StatsBomb Data API credentials. This function is used to access the JSON file from the StatsBomb API and format it as a data frame (tibble) for use in R. Currently, this function only supports one season and one competition at a time. This function can simply be run multiple times for different seasons and competitions and then bound together.}
 \usage{
 allmatches(username = "username", password = "password",
-                      matches$match_id, season_id = "season_id", competition_id = "competition_id", parallel = T)
+                      matches$match_id, season_id = "season_id", competition_id = "competition_id")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,8 +21,6 @@ allmatches(username = "username", password = "password",
 }
 
 \item{competition_id}{Character object of the competition_id for the match you wish to access.
-}
-\item{Parallel}{Boolean variable for whether or not you want to gather in parallel (much faster).
 }
 
 }
@@ -48,7 +46,7 @@ allmatches(username = "username", password = "password",
 }
 \examples{
 allmatches(username = username, password = password,
-                      matches.epl$match_id, season_id, competition_id, parallel = T)
+                      matches.epl$match_id, season_id, competition_id)
 \keyword{StatsBomb}% use one of  RShowDoc("KEYWORDS")
 \keyword{Data}% __ONLY ONE__ keyword per line
 \keyword{Match}% __ONLY ONE__ keyword per line
